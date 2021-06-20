@@ -15,25 +15,24 @@ public class MyMapNode<T, V> implements INode<T> {
     public void setData(T data) {
         this.data = data;
     }
-
     @Override
-    public T setData() {
+    public T getData() {
         return data;
     }
 
-    public V getValue(){
+    public V getValue() {
         return value;
     }
-    public void setValue(V value){
+
+    public void setValue(V value) {
         this.value = value;
     }
-    @Override
+
     public void setNext(INode<T> next) {
         this.next = (MyMapNode<T, V>) next;
     }
-
     @Override
-    public INode<T> getNext() {
+    public INode<T> getNext(){
         return next;
     }
 
